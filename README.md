@@ -3,7 +3,7 @@
 ### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
 
-####Contributions Added By Eqan Ahmad For a More User Friendly Environment
+#### Contributions Added By Eqan Ahmad For a More User Friendly Environment
 
 #### Contributions Added By Eqan Ahmad For a More User Friendly Environment
 
