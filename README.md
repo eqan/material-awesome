@@ -2,11 +2,10 @@
 
 ### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-<<<<<<< HEAD
+
 ####Contributions Added By Eqan Ahmad For a More User Friendly Environment
-=======
+
 #### Contributions Added By Eqan Ahmad For a More User Friendly Environment
->>>>>>> a7b0b53422c8bf83701286f6fcc934908dbfa767
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
@@ -43,17 +42,15 @@ _[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp5
 - (Optional) [meteo-qt](https://github.com/dglent/meteo-qt) For Weather
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
 
-<<<<<<< HEAD
-=======
+
 - #### Future Developmental Features
 - [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome
 - [More Widgets] Widgets made out of scripts would be more efficient
 
->>>>>>> a7b0b53422c8bf83701286f6fcc934908dbfa767
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/eqan/material-awesomev2.git ~/.config/awesome
+git clone https://github.com/eqan/material-awesome.git ~/.config/awesome
 ```
 
 > Awesome 4.3 is so new that most of the distributions have not updated it yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch (not in development by me)
