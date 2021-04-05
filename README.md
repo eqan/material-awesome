@@ -39,7 +39,7 @@ _[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp5
 - (Optional) [FlameShot](https://github.com/flameshot-org/flameshot) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
 - (Optional) [meteo-qt](https://github.com/dglent/meteo-qt) For Weather
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
-
+- (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
 - #### Future Developmental Features
 - [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome
