@@ -2,13 +2,13 @@ local dir = os.getenv('HOME') .. '/.config/awesome/theme/icons'
 
 return {
   --tags
-  chrome = dir .. '/google-chrome.svg',
-  code = dir .. '/code-braces.svg',
-  social = dir .. '/forum.svg',
-  folder = dir .. '/folder.svg',
-  music = dir .. '/music.svg',
-  game = dir .. '/google-controller.svg',
-  lab = dir .. '/flask.svg',
+  brave = dir .. '/tasklist/brave.svg',
+  terminal = dir .. '/tasklist/code-braces.svg',
+  code = dir .. '/tasklist/vs-code.svg',
+  folder = dir .. '/tasklist/folder.svg',
+  torrent = dir .. '/tasklist/torrent.svg',
+  book = dir .. '/tasklist/book.svg',
+  lab = dir .. '/tasklist/flask.svg',
   --others
   menu = dir .. '/menu.svg',
   close = dir .. '/close.svg',
@@ -24,6 +24,5 @@ return {
   memory = dir .. '/memory.svg',
   harddisk = dir .. '/harddisk.svg',
   thermometer = dir .. '/thermometer.svg',
-  plus = dir .. '/plus.svg',
   clipboard = dir .. '/plus.svg'
 }

@@ -6,39 +6,39 @@ local apps = require('configuration.apps')
 
 local tags = {
   {
-    icon = icons.chrome,
+    icon = icons.brave,
     type = 'chrome',
     defaultApp = 'brave-nightly',
     screen = 1
   },
   {
-    icon = icons.code,
-    type = 'code',
+    icon = icons.terminal,
+    type = 'terminal',
     defaultApp = 'alacritty',
     screen = 2
   },
   {
-    icon = icons.social,
-    type = 'social',
+    icon = icons.code,
+    type = 'code',
     defaultApp = 'code',
     screen = 3
   },
   {
-    icon = icons.game,
-    type = 'game',
+    icon = icons.book,
+    type = 'book',
     defaultApp = 'foliate',
     screen = 4
   },
   {
     icon = icons.folder,
     type = 'files',
-    defaultApp = "bash -c 'terminator -x ranger'",
+    defaultApp = "bash -c 'alacritty -e ranger'",
     screen = 5
   },
   {
-    icon = icons.music,
-    type = 'music',
-    defaultApp = "bash -c 'terminator -x rtorrent'",
+    icon = icons.torrent,
+    type = 'torrent',
+    defaultApp = "bash -c 'alacritty -e rtorrent'",
     screen = 6
   },
   {
