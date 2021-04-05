@@ -9,8 +9,6 @@ Note: This fork focuses on streamlining the config and adding some Quality of Li
 
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
 
-[![](./theme/PapyElGringo-theme/demo.gif?raw=true)](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)
-_[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)_
 
 |                Tiled                 |                Panel                 |             Exit screen              |
 | :----------------------------------: | :----------------------------------: | :----------------------------------: |
@@ -39,7 +37,7 @@ _[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp5
 - (Optional) [FlameShot](https://github.com/flameshot-org/flameshot) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
 - (Optional) [meteo-qt](https://github.com/dglent/meteo-qt) For Weather
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
-
+- (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
 - #### Future Developmental Features
 - [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome
