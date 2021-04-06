@@ -6,11 +6,12 @@
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
-An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.[](/theme/eqan-theme/demo.gif)
+An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
+![](/theme/eqan-theme/desktop.png)
 
-|               Tiled                |                Panel                 |              Exit screen               |
-| :--------------------------------: | :----------------------------------: | :------------------------------------: |
-| ![](/theme/eqan-theme/desktop.png) | ![](/theme/eqan-theme/menu-open.png) | ![](/theme/eqan-theme/exit-screen.png) |
+|              Tiled               |                Panel                 |              Exit screen               |
+| :------------------------------: | :----------------------------------: | :------------------------------------: |
+| ![](/theme/eqan-theme/tiled.png) | ![](/theme/eqan-theme/menu-open.png) | ![](/theme/eqan-theme/exit-screen.png) |
 
 ## Installation
 
