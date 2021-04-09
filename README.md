@@ -2,7 +2,7 @@
 
 ### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-#### Contributions Added By Eqan Ahmad For a More User Friendly Environment
+#### Contributions Added By Eqan Ahmad For a More User Friendly Environment[Since 2020]
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
