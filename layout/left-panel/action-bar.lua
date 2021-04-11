@@ -7,6 +7,7 @@ local dpi = require('beautiful').xresources.apply_dpi
 local icons = require('theme.icons')
 local TagList = require('widget.tag-list')
 local clickable_container = require('widget.material.clickable-container')
+local weather_widget = require("widget.weather.weather")
 
 return function(screen, panel, action_bar_width)
   -- Clock / Calendar 24h format
@@ -134,6 +135,19 @@ end
       --require('widget.package-updater'),
       require('widget.wifi'),
       require('widget.battery'),
+      weather_widget({
+        api_key='ecad7a8a23193461bdfe1ea598ad3b5e',
+        coordinates = {31.7584, 72.9165},
+        time_format_12h = true,
+        units = 'metric',
+        both_units_widget = false,
+        font_name = 'Roboto',
+        icons = 'VitalyGorbachev',
+        icons_extension = '.svg',
+        show_hourly_forecast = true,
+        show_daily_forecast = true,
+}),
+              --customized
       -- Clock
       clock_widget,
       -- LayoutBox

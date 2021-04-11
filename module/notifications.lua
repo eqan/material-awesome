@@ -72,31 +72,25 @@ local function bat_notification()
   local bat_capacity = tonumber(f_capacity:read("*all"))
   local bat_status = trim(f_status:read("*all"))
 
-  if (bat_capacity <= 10 and bat_status == "Discharging") then
+  if (bat_capacity <= 20 and bat_status == "Discharging") then
     naughty.notify({ title      = "Battery Warning"
       , text       = "Battery Low! " .. bat_capacity .."%" .. " left!"
-  --    , fg="#ff0000"
       , bg="#ff0000"
       , timeout    = 15
-  --    , position   = "bottom_left"
     })
   end
   if (bat_capacity >= 95 and bat_capacity <= 99 and bat_status == "Charging") then
     naughty.notify({ title      = "Battery Almost Full"
       , text       = "Please Unplug Your charger"
-  --    , fg="#ff0000"
       , bg="#00FF00"
       , timeout    = 15
-  --    , position   = "bottom_left"
     })
   end
   if (bat_capacity == 100 and bat_status == "Charging") then
     naughty.notify({ title      = "Battery Full"
       , text       = "Please Unplug Your charger"
-  --    , fg="#ff0000"
       , bg="#32CD32"
       , timeout    = 15
-  --    , position   = "bottom_left"
     })
   end
 end

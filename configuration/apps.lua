@@ -11,7 +11,6 @@ return {
     '~/.config/awesome/configuration/awspawn',
     'light-locker --lock-on-lid',
     'light-locker --no-late-locking',
-    'meteo-qt',
     'picom',
     'pnmixer',
 --    'xfce4-power-manager', -- Power manager
