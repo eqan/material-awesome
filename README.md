@@ -50,8 +50,18 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
 - (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
-### 2) Future Developmental Features
+### 2) Current Features
 
+- [x] Material Design
+- [x] Built-In Native Script Based Widget(wifi, weather, volume, brightness, battery etc)
+- [x] Rofi Script based menus, instead of 3rd party applications(which consume alot of resources)
+- [x] Keyboard Shortcut driven(Most love dedicated to Vim Keybindings)
+- [x] Hybrid Keyboard and Mouse driven experience
+- [x] Best of both worlds(Desktop Environment & Window Manager)
+
+### 3) Future Developmental Features
+
+- [ ] Aim: To make window manager that relies less on 3rd party apps and has most of the things built-in natively
 - [ ] Tree Tiling: i3 Window Manager Tree Tiling Setup for Awesome.
 - [ ] More Widgets: Widgets made out of scripts would be more efficient.
 - [ ] Code Optimization
@@ -60,7 +70,7 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - [ ] Material Icons: Need to simplify the icons to only material
 - [ ] More Functionality To Side Bar
 
-### 3) Clone the configuration
+### 4) Clone the configuration
 
 ```
 git clone https://github.com/eqan/material-awesome.git ~/.config/awesome
@@ -72,12 +82,12 @@ git clone https://github.com/eqan/material-awesome.git ~/.config/awesome
 git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
 ```
 
-### 4) Set the themes
+### 5) Set the themes
 
 Start **lxappearance** to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
-### 5) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
+### 6) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
 
 First install `qt5-style-plugins` or `qt5-style-gtk2` (debian) | `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
@@ -88,7 +98,7 @@ QT_QPA_PLATFORMTHEME=gtk2
 
 The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
 
-### 6) Read the documentation
+### 7) Read the documentation
 
 The documentation live within the source code.
 
