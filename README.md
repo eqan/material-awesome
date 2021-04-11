@@ -1,8 +1,8 @@
 ## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
 
-### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
+### Original work by PapyElGringo, official development has moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-#### Contributions Added By Eqan Ahmad For a More User Friendly Environment[Since 2020]
+#### Now I am further developing this project to full extent of my abilities.
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
@@ -13,18 +13,31 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 | :------------------------------: | :----------------------------------: | :------------------------------------: |
 | ![](/theme/eqan-theme/tiled.png) | ![](/theme/eqan-theme/menu-open.png) | ![](/theme/eqan-theme/exit-screen.png) |
 
+
 ## Installation
 
-### Note: the best transition is from gnome to material-awesome as KDE-plasma can break some indicators until plasma is purged entierly.
-
 ### 1) Get all the dependencies
+
+#### Debian-Based
+
+```
+sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight flameshot pnmixer ranger policykit-1-gnome grabc rofi-wifi-menu-git  -y
+
+wget -qO- https://git.io/papirus-icon-theme-install | sh
+```
+
+#### Arch-Based
+
+```
+yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
+```
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
 - [Picom](https://github.com/yshui/picom) for the compositor (blur and animations) universal install: picom
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) the lockscreen application Arch Install: betterlockscreen Debian: betterlockscreen
-
+- [Rofi-Wifi-Menu](https://aur.archlinux.org/packages/rofi-wifi-menu-git/) for the wifi menu, extra light and gets the job done
 - [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard package: xclip
 - [Parcellite](https://github.com/ZaWertun/parcellite) Clipboard That Manages Your Copy/Paste Content On The Go
 - **gnome-keyring** and a **policykit-agent** (by default policykit-1-gnome is enabled) OR mate-polkit
