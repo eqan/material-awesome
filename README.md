@@ -1,8 +1,8 @@
 ## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
 
-### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
+### Original work by PapyElGringo, official development has moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-#### Contributions Added By Eqan Ahmad For a More User Friendly Environment
+#### Now I am further developing this project to full extent of my abilities.
 
 Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
 
@@ -13,18 +13,31 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 | :------------------------------: | :----------------------------------: | :------------------------------------: |
 | ![](/theme/eqan-theme/tiled.png) | ![](/theme/eqan-theme/menu-open.png) | ![](/theme/eqan-theme/exit-screen.png) |
 
+
 ## Installation
 
-### Note: the best transition is from gnome to material-awesome as KDE-plasma can break some indicators until plasma is purged entierly.
-
 ### 1) Get all the dependencies
+
+#### Debian-Based
+
+```
+sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight flameshot pnmixer ranger policykit-1-gnome grabc rofi-wifi-menu-git  -y
+
+wget -qO- https://git.io/papirus-icon-theme-install | sh
+```
+
+#### Arch-Based
+
+```
+yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
+```
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
 - [Picom](https://github.com/yshui/picom) for the compositor (blur and animations) universal install: picom
 - [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) the lockscreen application Arch Install: betterlockscreen Debian: betterlockscreen
-
+- [Rofi-Wifi-Menu](https://aur.archlinux.org/packages/rofi-wifi-menu-git/) for the wifi menu, extra light and gets the job done
 - [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard package: xclip
 - [Parcellite](https://github.com/ZaWertun/parcellite) Clipboard That Manages Your Copy/Paste Content On The Go
 - **gnome-keyring** and a **policykit-agent** (by default policykit-1-gnome is enabled) OR mate-polkit
@@ -38,11 +51,13 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
 - (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
-- #### Future Developmental Features
-- [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome
-- [More Widgets] Widgets made out of scripts would be more efficient
+### 2) Future Developmental Features
+- [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome.
+- [More Widgets] Widgets made out of scripts would be more efficient.
+- [Code Optimization] Need optimize code.
+- [Minimalisim] More minimialist and independent desktop with less third party applications.
 
-### 2) Clone the configuration
+### 3) Clone the configuration
 
 ```
 git clone https://github.com/eqan/material-awesome.git ~/.config/awesome
@@ -54,12 +69,12 @@ git clone https://github.com/eqan/material-awesome.git ~/.config/awesome
 git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
 ```
 
-### 3) Set the themes
+### 4) Set the themes
 
 Start **lxappearance** to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
-### 4) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
+### 5) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
 
 First install `qt5-style-plugins` or `qt5-style-gtk2` (debian) | `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
@@ -70,7 +85,7 @@ QT_QPA_PLATFORMTHEME=gtk2
 
 The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
 
-### 5) Read the documentation
+### 6) Read the documentation
 
 The documentation live within the source code.
 
