@@ -13,7 +13,6 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 | :------------------------------: | :----------------------------------: | :------------------------------------: |
 | ![](/theme/eqan-theme/tiled.png) | ![](/theme/eqan-theme/menu-open.png) | ![](/theme/eqan-theme/exit-screen.png) |
 
-
 ## Installation
 
 ### 1) Get all the dependencies
@@ -52,10 +51,14 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
 ### 2) Future Developmental Features
-- [Tree Tiling] i3 Window Manager Tree Tiling Setup for Awesome.
-- [More Widgets] Widgets made out of scripts would be more efficient.
-- [Code Optimization] Need optimize code.
-- [Minimalisim] More minimialist and independent desktop with less third party applications.
+
+- [ ] Tree Tiling: i3 Window Manager Tree Tiling Setup for Awesome.
+- [ ] More Widgets: Widgets made out of scripts would be more efficient.
+- [ ] Code Optimization
+- [ ] Minimalisim: More minimialist and independent desktop with less third party applications.
+- [ ] Documentation Update
+- [ ] Material Icons: Need to simplify the icons to only material
+- [ ] More Functionality To Side Bar
 
 ### 3) Clone the configuration
 

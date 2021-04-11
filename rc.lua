@@ -30,7 +30,6 @@ local function trim(s)
 end
 
 
--- end here for battery warning
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(
   function(s)
@@ -65,16 +64,6 @@ _G.client.connect_signal(
     end
   end
 )
-
--- Enable sloppy focus, so that focus follows mouse.
---[[
---_G.client.connect_signal(
---  'mouse::enter',
---  function(c)
---    c:emit_signal('request::activate', 'mouse_enter', {raise = true})
---  end
---)
---]]
 
 -- Make the focused window have a glowing border
 _G.client.connect_signal(
