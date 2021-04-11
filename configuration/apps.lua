@@ -7,12 +7,10 @@ return {
     -- List of apps to start once on start-up
   run_on_start_up = {
     'betterlockscreen -l',
---    'nm-applet',
     '~/.config/awesome/configuration/awspawn',
     'light-locker --lock-on-lid',
     'light-locker --no-late-locking',
     'picom',
-    'pnmixer',
 --    'xfce4-power-manager', -- Power manager
     'xrandr',
    -- 'blueberry-tray', -- Bluetooth tray icon

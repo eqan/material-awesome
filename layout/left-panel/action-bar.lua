@@ -8,6 +8,7 @@ local icons = require('theme.icons')
 local TagList = require('widget.tag-list')
 local clickable_container = require('widget.material.clickable-container')
 local weather_widget = require("widget.weather.weather")
+local volume_widget = require('widget.volume.volume')
 
 return function(screen, panel, action_bar_width)
   -- Clock / Calendar 24h format
@@ -147,7 +148,9 @@ end
         show_hourly_forecast = true,
         show_daily_forecast = true,
 }),
-              --customized
+volume_widget{
+  type = 'arc',
+   },
       -- Clock
       clock_widget,
       -- LayoutBox

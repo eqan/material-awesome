@@ -326,24 +326,24 @@ awful.key(
   ),
   -- ALSA volume control
   awful.key(
-    {altkey},
-    'p',
+    {modkey},
+    ']',
     function()
       awful.spawn('amixer -D pulse set Master 5%+')
     end,
     {description = 'volume up', group = 'hotkeys'}
   ),
   awful.key(
-    {altkey},
-    'o',
+    {modkey},
+    '[',
     function()
       awful.spawn('amixer -D pulse set Master 5%-')
     end,
     {description = 'volume down', group = 'hotkeys'}
   ),
   awful.key(
-    {altkey},
-    'i',
+    {modkey},
+    '/',
     function()
       awful.spawn('amixer -D pulse set Master 1+ toggle')
     end,
