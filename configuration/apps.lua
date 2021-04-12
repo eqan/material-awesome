@@ -25,7 +25,7 @@ return {
     video="vlc",
     lock="betterlockscreen";
     email="neomutt",
-    rofi = 'rofi -dpi ' .. get_dpi() .. ' -width ' .. with_dpi(400) .. ' -show drun -theme ' .. filesystem.get_configuration_dir() .. '/configuration/rofi.rasi',
+    rofi = 'rofi -dpi ' .. get_dpi() .. ' -width ' .. with_dpi(300) .. ' -show drun -theme ' .. filesystem.get_configuration_dir() .. '/configuration/rofi.rasi',
     quake = 'terminator',
     browser = 'brave-nightly',
     xpad = 'xpad',
