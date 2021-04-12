@@ -46,7 +46,6 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
 - (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
 - (Optional) [FlameShot](https://github.com/flameshot-org/flameshot) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
-- (Optional) [meteo-qt](https://github.com/dglent/meteo-qt) For Weather
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
 - (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 

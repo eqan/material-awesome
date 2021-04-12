@@ -11,7 +11,6 @@ return {
     'light-locker --lock-on-lid',
     'light-locker --no-late-locking',
     'picom',
---    'xfce4-power-manager', -- Power manager
     'xrandr',
    -- 'blueberry-tray', -- Bluetooth tray icon
     'parcellite -silent',
