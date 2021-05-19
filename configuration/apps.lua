@@ -22,7 +22,7 @@ return {
     editor = 'nvim',
     image="qview",
     video="vlc",
-    lock="betterlockscreen";
+    lock="betterlockscreen -l";
     email="neomutt",
     rofi = 'rofi -dpi ' .. get_dpi() .. ' -width ' .. with_dpi(300) .. ' -show drun -theme ' .. filesystem.get_configuration_dir() .. '/configuration/rofi.rasi',
     quake = 'terminator',
