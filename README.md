@@ -28,7 +28,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
+pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
 ```
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
@@ -58,16 +58,17 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - [x] Hybrid Keyboard and Mouse driven experience
 - [x] Best of both worlds(Desktop Environment & Window Manager)
 
+
 ### 3) Future Developmental Features
 
 - [ ] Aim: To make window manager that relies less on 3rd party apps and has most of the things built-in natively
 - [ ] Tree Tiling: i3 Window Manager Tree Tiling Setup for Awesome.
-- [ ] More Widgets: Widgets made out of scripts would be more efficient.
+- [ ] More Functionality To DashBoard
 - [ ] Code Optimization
 - [ ] Minimalisim: More minimialist and independent desktop with less third party applications.
 - [ ] Documentation Update
 - [ ] Material Icons: Need to simplify the icons to only material
-- [ ] More Functionality To Side Bar
+
 
 ### 4) Clone the configuration
 
