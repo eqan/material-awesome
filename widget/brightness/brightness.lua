@@ -34,7 +34,7 @@ local function worker(user_args)
 
     local type = args.type or 'arc' -- arc or icon_and_text
     local path_to_icon = args.path_to_icon or ICON_DIR .. 'brightness.svg'
-    local font = args.font or 'Play 9'
+    local font = args.font or 'Roboto Mono bold 6'
     local timeout = args.timeout or 100
 
     local program = args.program or 'light'

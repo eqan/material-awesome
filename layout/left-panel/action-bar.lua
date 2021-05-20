@@ -141,7 +141,7 @@ end
         time_format_12h = true,
         units = 'metric',
         both_units_widget = false,
-        font_name = 'Roboto',
+        font_name = 'Roboto Mono Regular',
         icons = 'material-icons',
         icons_extension = '.svg',
         show_hourly_forecast = true,
@@ -153,7 +153,7 @@ end
             step = 2,
           },
         volume_widget{
-            type = 'arc'
+            type = 'icon_and_text'
         },
       require('widget.wifi'),
       require('widget.battery'),

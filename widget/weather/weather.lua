@@ -133,7 +133,7 @@ local function worker(user_args)
 
     local coordinates = args.coordinates
     local api_key = args.api_key
-    local font_name = args.font_name or beautiful.font:gsub("%s%d+$", "")
+    local font_name = args.font_name or 'Roboto Mono bold 7'
     local units = args.units or 'metric'
     local time_format_12h = args.time_format_12h
     local both_units_widget = args.both_units_widget or false
@@ -159,8 +159,8 @@ local function worker(user_args)
                     {
                         id = 'icon',
                         --resize = true,
-                        forced_width = 28,
-                        forced_height = 28,
+                        forced_width = 20,
+                        forced_height = 20,
                         widget = wibox.widget.imagebox
                     },
                     valign = 'center',
@@ -168,6 +168,7 @@ local function worker(user_args)
                 },
                 {
                     id = 'txt',
+                    font = 'Roboto Mono bold 7',
                     valign = 'center',
                     align = 'center',
                     widget = wibox.widget.textbox

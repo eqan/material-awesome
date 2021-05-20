@@ -3,12 +3,12 @@ local beautiful = require('beautiful')
 
 local widget = {}
 
-local ICON_DIR = os.getenv("HOME") .. '/.config/awesome/awesome-wm-widgets/volume-widget/icons/'
+local ICON_DIR = os.getenv("HOME") .. '/.config/awesome/widget/volume/icons/'
 
 function widget.get_widget(widgets_args)
     local args = widgets_args or {}
 
-    local font = args.font or beautiful.font
+    local font = args.font or 'Roboto Mono bold 7'
     local icon_dir = args.icon_dir or ICON_DIR
 
     return wibox.widget {
@@ -16,9 +16,11 @@ function widget.get_widget(widgets_args)
             {
                 id = "icon",
                 resize = false,
+                forced_width = 20,
+                forced_height = 20,
                 widget = wibox.widget.imagebox,
             },
-            --valign = 'center',
+            valign = 'center',
             layout = wibox.container.place
         },
         {
