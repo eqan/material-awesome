@@ -66,6 +66,8 @@ local function worker(user_args)
             {
                 id = 'txt',
                 font = font,
+                valign = 'center',
+                align = 'center',
                 widget = wibox.widget.textbox
             },
             spacing = 4,

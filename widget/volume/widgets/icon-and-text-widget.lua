@@ -18,12 +18,14 @@ function widget.get_widget(widgets_args)
                 resize = false,
                 widget = wibox.widget.imagebox,
             },
-            valign = 'center',
+            --valign = 'center',
             layout = wibox.container.place
         },
         {
             id = 'txt',
             font = font,
+            valign = 'center',
+            align = 'center',
             widget = wibox.widget.textbox
         },
         layout = wibox.layout.fixed.horizontal,

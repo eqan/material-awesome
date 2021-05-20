@@ -142,7 +142,6 @@ end
         units = 'metric',
         both_units_widget = false,
         font_name = 'Roboto',
-        --icons = 'VitalyGorbachev',
         icons = 'material-icons',
         icons_extension = '.svg',
         show_hourly_forecast = true,
@@ -153,11 +152,12 @@ end
             program = 'xbacklight',
             step = 2,
           },
-      volume_widget{
-        type = 'arc',
+        volume_widget{
+            type = 'arc'
         },
       require('widget.wifi'),
       require('widget.battery'),
+      --require('volume'),
       -- Clock
       clock_widget,
       -- LayoutBox

@@ -12,12 +12,15 @@ local awful = require('awful')
 local watch = require('awful.widget.watch')
 local wibox = require('wibox')
 local clickable_container = require('widget.material.clickable-container') local gears = require('gears') local dpi = require('beautiful').xresources.apply_dpi
-
 local HOME = os.getenv('HOME')
 local PATH_TO_ICONS = HOME .. '/.config/awesome/widget/wifi/icons/'
 local interface = 'wlp8s0'
 local connected = false
 local essid = 'N/A'
+local bitrate= 'N/A'
+local inet= 'N/A'
+local mac= 'N/A'
+local f;
 
 local widget =
   wibox.widget {
@@ -50,7 +53,13 @@ awful.tooltip(
     align = 'right',
     timer_function = function()
       if connected then
-        return 'Connected to ' .. essid
+        msg =
+                "┌["..interface.."]\n"..
+                "├ESSID:\t\t"..essid.."\n"..
+                "├IP:\t\t"..inet.."\n"..
+                "├BSSID\t\t"..mac.."\n"..
+                "└Bit rate:\t"..bitrate..""
+        return msg
       else
         return 'Wireless network is disconnected'
       end
@@ -61,15 +70,27 @@ awful.tooltip(
   }
 )
 
+
 local function grabText()
   if connected then
     awful.spawn.easy_async(
       'iw dev ' .. interface .. ' link',
       function(stdout)
-        essid = stdout:match('SSID:(.-)\n')
-        if (essid == nil) then
-          essid = 'N/A'
+        -- SSID: 00018E1145AC
+        essid = stdout:match('SSID:(.-)\n') or essid
+        f = io.popen("iw dev "..interface.." link")
+            for line in f:lines() do
+                -- Connected to 00:01:8e:11:45:ac (on wlp1s0)
+                mac     = string.match(line, "Connected to ([0-f:]+)") or mac
+                -- tx bitrate: 36.0 MBit/s
+                bitrate = string.match(line, "tx bitrate: (.+/s)") or bitrate
+            end
+        f:close()
+        f = io.popen("ip addr show "..interface)
+        for line in f:lines() do
+             inet    = string.match(line, "inet (%d+%.%d+%.%d+%.%d+)") or inet
         end
+        f:close()
       end
     )
   end

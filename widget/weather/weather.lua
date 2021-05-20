@@ -23,7 +23,10 @@ local function show_warning(message)
     naughty.notify {
         preset = naughty.config.presets.critical,
         title = 'Weather Widget',
-        text = message
+        text = message, mode = 'inside', align = 'right',
+        preferred_positions = {'right', 'left', 'top', 'bottom'},
+        margin_leftright = dpi(8),
+        margin_topbottom = dpi(8)
     }
 end
 
@@ -156,8 +159,8 @@ local function worker(user_args)
                     {
                         id = 'icon',
                         --resize = true,
-                        forced_width = 36,
-                        forced_height = 36,
+                        forced_width = 28,
+                        forced_height = 28,
                         widget = wibox.widget.imagebox
                     },
                     valign = 'center',
