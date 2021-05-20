@@ -141,6 +141,7 @@ local function worker(user_args)
     local timeout = args.timeout or 120
 
     local ICONS_DIR = WIDGET_DIR .. '/icons/' .. icon_pack_name .. '/'
+    local ICONS_WIDGETBOX_DIR = WIDGET_DIR .. '/icons/' .. 'VitalyGorbachev' .. '/'
     local owm_one_cal_api =
         ('https://api.openweathermap.org/data/2.5/onecall' ..
             '?lat=' .. coordinates[1] .. '&lon=' .. coordinates[2] .. '&appid=' .. api_key ..
@@ -154,7 +155,9 @@ local function worker(user_args)
                 {
                     {
                         id = 'icon',
-                        resize = true,
+                        --resize = true,
+                        forced_width = 36,
+                        forced_height = 36,
                         widget = wibox.widget.imagebox
                     },
                     valign = 'center',
@@ -162,6 +165,8 @@ local function worker(user_args)
                 },
                 {
                     id = 'txt',
+                    valign = 'center',
+                    align = 'center',
                     widget = wibox.widget.textbox
                 },
                 layout = wibox.layout.fixed.vertical,
@@ -254,7 +259,7 @@ local function worker(user_args)
         layout = wibox.layout.flex.horizontal,
         update = function(self, weather)
             self:get_children_by_id('icon')[1]:set_image(
-                ICONS_DIR .. icon_map[weather.weather[1].icon] .. icons_extension)
+                ICONS_WIDGETBOX_DIR .. icon_map[weather.weather[1].icon] .. icons_extension)
             self:get_children_by_id('temp')[1]:set_text(gen_temperature_str(weather.temp, '%.0f', false, units))
             self:get_children_by_id('feels_like_temp')[1]:set_text(
                 'Feels like ' .. gen_temperature_str(weather.feels_like, '%.0f', false, units))
@@ -285,7 +290,7 @@ local function worker(user_args)
                     {
                         {
                             {
-                                image = ICONS_DIR .. icon_map[day.weather[1].icon] .. icons_extension,
+                                image = ICONS_WIDGETBOX_DIR .. icon_map[day.weather[1].icon] .. icons_extension,
                                 resize = true,
                                 forced_width = 48,
                                 forced_height = 48,
