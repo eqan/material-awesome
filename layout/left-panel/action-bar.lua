@@ -16,8 +16,12 @@ return function(screen, panel, action_bar_width)
   --local textclock = wibox.widget.textclock('<span font="Roboto Mono 8">%H\n%M</span>')
 
 -- Clock / Calendar 12AM/PM fornat
- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 8"> %d\n %m\n ----\n</span><span font="Roboto Mono bold 8"> %I\n %M\n</span><span font="Roboto Mono bold 7"> %p</span>')
- textclock.forced_height = 79
+-- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 8"> %d\n %m\n ----\n</span><span font="Roboto Mono bold 8"> %I\n %M\n</span><span font="Roboto Mono bold 7"> %p</span>')
+
+ local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 8">%I:%M</span><span font="Roboto Mono bold 7">%p</span>')
+ local date = wibox.widget.textclock('<span font="Roboto Mono bold 8">%d:%m:%y</span>')
+ date.align = 'center'
+ textclock.align = 'center'
 
 -- Add a calendar (credits to kylekewley for the original code)
 local month_calendar = awful.widget.calendar_popup.month({
@@ -26,9 +30,10 @@ local month_calendar = awful.widget.calendar_popup.month({
   week_numbers = true,
 })
 
-month_calendar:attach(textclock)
+month_calendar:attach(date)
 
-local clock_widget = wibox.container.margin(textclock, dpi(13), dpi(13), dpi(8), dpi(8))
+local date_widget = wibox.container.margin(date, dpi(0), dpi(0), dpi(5), dpi(5))
+local clock_widget = wibox.container.margin(textclock, dpi(0), dpi(0), dpi(5), dpi(5))
 
 -- Create an imagebox widget which will contains an icon indicating which layout we're using.
 -- We need one layoutbox per screen.
@@ -160,6 +165,7 @@ end
       --require('volume'),
       -- Clock
       clock_widget,
+      date_widget,
       -- LayoutBox
       LayoutBox(screen)
     }
