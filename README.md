@@ -4,8 +4,6 @@
 
 #### Now I am further developing this project to full extent of my abilities.
 
-Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
-
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
 ![](/theme/eqan-theme/desktop.png)
 
