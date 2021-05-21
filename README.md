@@ -63,9 +63,7 @@ pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-
 - [ ] Tree Tiling: i3 Window Manager Tree Tiling Setup for Awesome.
 - [ ] More Functionality To DashBoard
 - [ ] Code Optimization
-- [ ] Minimalisim: More minimialist and independent desktop with less third party applications.
 - [ ] Documentation Update
-- [ ] Material Icons: Need to simplify the icons to only material
 
 
 ### 4) Clone the configuration
