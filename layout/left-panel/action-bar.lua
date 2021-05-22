@@ -17,9 +17,8 @@ return function(screen, panel, action_bar_width)
 
 -- Clock / Calendar 12AM/PM fornat
 -- local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 8"> %d\n %m\n ----\n</span><span font="Roboto Mono bold 8"> %I\n %M\n</span><span font="Roboto Mono bold 7"> %p</span>')
-
  local textclock = wibox.widget.textclock('<span font="Roboto Mono bold 8">%I:%M</span><span font="Roboto Mono bold 7">%p</span>')
- local date = wibox.widget.textclock('<span font="Roboto Mono bold 8">%d:%m:%y</span>')
+ local date = wibox.widget.textclock('<span font="Roboto Mono bold 8">%d.%m.%y</span>')
  date.align = 'center'
  textclock.align = 'center'
 
