@@ -1,4 +1,4 @@
-## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
+## Material Awesome
 
 ### Original work by PapyElGringo, official development has moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
