@@ -151,6 +151,7 @@ end
         show_hourly_forecast = true,
         show_daily_forecast = true,
         }),
+      --require('widget.screen-recorder'),
       brightness_widget{
             type = 'icon_and_text',
             program = 'xbacklight',
