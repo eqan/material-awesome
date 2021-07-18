@@ -5,6 +5,7 @@
 #### Now I am further developing this project to full extent of my abilities.
 
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
+##### Note: Screenshot may be outdated so try and check out for your self :)
 ![](/theme/eqan-theme/desktop.png)
 
 |              Tiled               |                Panel                 |              Exit screen               |
@@ -61,9 +62,12 @@ pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-
 
 - [ ] Aim: To make window manager that relies less on 3rd party apps and has most of the things built-in natively
 - [ ] Tree Tiling: i3 Window Manager Tree Tiling Setup for Awesome.
-- [ ] More Functionality To DashBoard
 - [ ] Code Optimization
 - [ ] Documentation Update
+- [ ] ScreenRecorder Integeration
+- [ ] Material theme for rofi calc
+- [ ] Todo List
+- [ ] Droplet quick settings view instead of the usual sliders
 
 
 ### 4) Clone the configuration
