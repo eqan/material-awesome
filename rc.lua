@@ -2,7 +2,7 @@ local gears = require('gears')
 local awful = require('awful')
 require('awful.autofocus')
 local beautiful = require('beautiful')
-
+require("signal")
 
 
 -- Theme
