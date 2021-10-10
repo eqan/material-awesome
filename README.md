@@ -19,7 +19,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 #### Debian-Based
 
 ```
-sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight flameshot pnmixer ranger policykit-1-gnome grabc rofi-wifi-menu-git  -y
+sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight scrot pnmixer ranger policykit-1-gnome grabc rofi-wifi-menu-git  -y
 
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
@@ -27,7 +27,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
+pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance scrot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
 ```
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
@@ -44,7 +44,7 @@ pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-
 - (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme Universal Install: wget -qO- https://git.io/papirus-icon-theme-install | sh
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
 - (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
-- (Optional) [FlameShot](https://github.com/flameshot-org/flameshot) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
+- (Optional) Scrot screenshot utility
 - (Optional) [GrabC](https://github.com/muquit/grabc) Color Picker Key Combination is Super + Shift + P
 - (Optional) [Alacrty](https://github.com/alacritty/alacritty) Default Terminal
 
