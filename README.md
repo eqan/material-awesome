@@ -27,7 +27,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-pacman -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance scrot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
+pacman -S awesome rofi=1.6.0 picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance scrot pnmixer qt5-styleplugins ranger papirus-icon-theme rofi-wifi-menu-git grabc -y
 ```
 
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
